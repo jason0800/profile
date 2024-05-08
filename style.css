@@ -1,0 +1,79 @@
+body {
+  font-family: 'Varela Round', sans-serif;
+  line-height: 1.5;
+}
+
+h1 {
+  color:#627254;
+  font-size:20px;
+}
+
+h2 {
+  color:#76885B;
+  font-size:15px;
+}
+
+h3 {
+  color:#3a3a3a;
+  font-size:15px;
+}
+
+.link-charcoal {
+  color:#3a3a3a;
+  text-decoration: none;
+  font-size:15px;
+}
+
+a:hover {
+  color:#aaaaaa;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.img-circle {
+  border-radius: 50%;
+  width: 150px;
+}
+
+.container {
+  width: 500px;   /* This sets the width */
+  margin: 0px auto; /* This automatically sets left/right margins */
+}
+
+.card {
+  margin: 15px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  text-align: center;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  .container{
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    width: 300px;
+  }
+}
