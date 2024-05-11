@@ -1,33 +1,66 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Jason's Profile</title>
-    <meta name="description" content="My name is Jason and I'm studying programming at Le Wagon.">
+    <title>Jason Wang Portfolio</title>
+    <meta name="description" content="Hi, my name is Jason Wang and I am a full-stack developer.">
     <meta charset="utf-8">
     <script src="https://kit.fontawesome.com/0d24801cbd.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
   </head>
-
-  <div class="container">
-    <div class="card">
-      <h1>Hey, I'm Jason</h1>
-      <img class="img-circle" src="selfie in suit.jpg" alt = "Jason Profile Picture">
-      <p>I'm a programming student at Le Wagon.</p>
-    </div>
-    <div class="card">
-      <h3>Follow me</h3>
-      <ul class="list-inline">
-        <li class>
-          <a class="fa-brands fa-linkedin social-icon" href="https://www.linkedin.com/in/jasonwangnx/" id = "icon" target = "_blank"></a>
-        </li>
-        <li>
-          <a class="fa-brands fa-instagram social-icon" href="https://www.instagram.com/jason_w_1/" target = "_blank"></a>
-        </li>
-      </ul>
-    </div>
-  </div>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Jason Wang</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Jason Wang</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <script src="script.js"></script>
+  </body>
 </html>
+
+
+
+<!-- <div class="container">
+  <div class="card">
+    <h1>Hey, I'm Jason</h1>
+    <img class="img-circle" src="business-photo.avif" alt = "Jason Profile Picture">
+    <p>I'm a programming student at Le Wagon.</p>
+  </div>
+  <div class="card">
+    <h3>Follow me</h3>
+    <ul class="list-inline">
+      <li class>
+        <a class="fa-brands fa-linkedin social-icon" href="https://www.linkedin.com/in/jasonwangnx/" id = "icon" target = "_blank"></a>
+      </li>
+      <li>
+        <a class="fa-brands fa-instagram social-icon" href="https://www.instagram.com/jason_w_1/" target = "_blank"></a>
+      </li>
+    </ul>
+  </div>
+</div> -->
