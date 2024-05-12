@@ -1,1 +1,1 @@
-# This profile page is still under progress!
+# This profile page is still in progress!
