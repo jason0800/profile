@@ -128,3 +128,12 @@ a:hover {
 }
 
 /* Sections  */
+
+.profile-pic {
+  width:5px;
+}
+
+.profile-pic img {
+  border-radius:50%;
+  width:25rem;
+}
