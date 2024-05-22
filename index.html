@@ -4,11 +4,11 @@
     <title>Jason Wang Portfolio</title>
     <meta name="description" content="Hi, my name is Jason Wang and I am a full-stack developer.">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/0d24801cbd.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
   </head>
@@ -41,16 +41,33 @@
       </div>
     </nav>
     <section id="profile">
-      <div class="profile-pic">
-        <img src="./business-photo.avif" alt="Jason Wang profile picture">
+      <div class="section__pic-container">
+        <img id="profile-photo" src="./business-photo.avif" alt="Jason Wang profile picture">
       </div>
-      <div class="profile-text">
-        <p class="profile-text-p1">Hello, I'm</p>
-        <h1 class="profile-text-h1">Jason Wang</h1>
-        <p class="profile-text-p2">Fullstack Developer</p>
-        <div class="btn-container">
-          <button>Download CV</button>
-          <button>Contact Info</button>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Jason Wang</h1>
+        <p class="section__text__p2"><em>Fullstack Developer</em></p>
+        <div id="btn-container">
+          <button
+            class="btn"
+            onclick="window.open('./jason-wang-cv.pdf')"
+            >
+            Download CV</button>
+          <button
+            class="btn btn-contact-info" onclick="location.href='./#contact'"
+            >
+            Contact Info</button>
+        </div>
+        <div id="socials-container">
+          <i
+            class="fa-brands fa-linkedin-in"
+            onclick="location.href='https://linkedin.com/in/jasonwangnx/'"
+            ></i>
+          <i
+            class="fa-brands fa-github-alt"
+            onclick="location.href='https://github.com/jason0800'"
+            ></i>
         </div>
       </div>
     </section>

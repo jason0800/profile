@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Varela Round', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
 }
 
 html {
@@ -14,7 +14,7 @@ html {
 }
 
 p {
-  color:rgb(85,85,85);
+  color: rgb(85,85,85);
 }
 
 /* Transition */
@@ -26,7 +26,7 @@ a, .btn {
 /* Desktop Nav */
 
 nav, .nav-links {
-  display:flex;
+  display: flex;
 }
 
 nav {
@@ -42,9 +42,9 @@ nav {
 }
 
 a {
-  color:black;
-  text-decoration:none;
-  text-decoration-color:white;
+  color: rgb(55, 55, 55);
+  text-decoration: none;
+  text-decoration-color: white;
 }
 
 a:hover {
@@ -59,7 +59,7 @@ a:hover {
 }
 
 .logo:hover {
-  cursor:default;
+  cursor: default;
 }
 
 /* Hamburger Menu */
@@ -69,23 +69,23 @@ a:hover {
 }
 
 .hamburger-menu {
-  position:relative;
-  display:inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .hamburger-icon {
   display: flex;
   flex-direction: column;
-  justify-content:space-between;
-  height:24px;
-  width:30px;
-  cursor:pointer;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
 }
 
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: black;
+  background-color: rgb(55, 55, 55);
 }
 
 .menu-links {
@@ -103,7 +103,7 @@ a:hover {
   padding: 10px;
   text-align: right;
   font-size: 1.5rem;
-  color: black;
+  color: rgb(55, 55, 55);
   text-decoration: none;
 }
 
@@ -129,11 +129,101 @@ a:hover {
 
 /* Sections  */
 
-.profile-pic {
-  width:5px;
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
 }
 
-.profile-pic img {
-  border-radius:50%;
-  width:25rem;
+.section-container {
+  display: flex;
+}
+
+/* Profile Pic */
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+  align-items: center;
+}
+
+.section__pic-container {
+  display: flex;
+  height: 300px;
+  width: 300px;
+  margin: auto 0;
+}
+
+#profile-photo {
+  border-radius: 50%;
+}
+
+/* Text, buttons, and socials */
+
+.section__text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 0.7rem;
+}
+
+#btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  border-radius: 2rem;
+  padding: 1rem;
+  width: 8rem;
+  border: rgb(152, 152, 152) 0.1rem solid;
+  background-color: white;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: rgb(10, 10, 10);
+  color: white;
+  transition: 0.3s ease;
+}
+
+.btn-contact-info {
+  background-color: rgb(55, 55, 55);
+  color: white;
+}
+
+.fa-brands {
+  font-size: 1.5rem;
+}
+
+.fa-brands:hover {
+  cursor: pointer;
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.section__text__p1 {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.section__text__p2 {
+  font-weight: 600;
+  font-size: 1.2rem;
 }
