@@ -5,6 +5,17 @@
   padding: 0;
 }
 
+
+section {
+  padding-top: 10vh;
+  height: 90vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+  text-align: center;
+}
+
+
 body {
   font-family: 'Roboto Slab', sans-serif;
 }
@@ -15,6 +26,7 @@ html {
 
 p {
   color: rgb(85,85,85);
+  line-height: 25px;
 }
 
 /* Transition */
@@ -127,23 +139,9 @@ a:hover {
   transform: rotate(-45deg) translate(10px, -5px);
 }
 
-/* Sections  */
-
-section {
-  padding-top: 4vh;
-  height: 96vh;
-  margin: 0 10rem;
-  box-sizing: border-box;
-  min-height: fit-content;
-}
-
-.section-container {
-  display: flex;
-}
-
 /* Profile Pic */
 
-#profile {
+#hero {
   display: flex;
   justify-content: center;
   gap: 5rem;
@@ -151,7 +149,7 @@ section {
   align-items: center;
 }
 
-.section__pic-container {
+.pic-container {
   display: flex;
   height: 300px;
   width: 300px;
@@ -226,4 +224,93 @@ section {
 .section__text__p2 {
   font-weight: 600;
   font-size: 1.2rem;
+}
+
+/* About Section */
+
+.about-grand-container {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  margin: 3rem 0;
+  position: relative;
+}
+
+.arrow {
+  font-size: 2rem;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+.about-pic-container {
+  display: flex;
+  height: 500px;
+  margin: auto 0;
+}
+
+#about-photo {
+  border-radius: 2rem;
+}
+
+.about-container-one {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-container-two {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.details-container {
+  flex: 1;
+  border-radius: 2rem;
+  padding: 2rem;
+  border: rgb(152, 152, 152) 0.1rem solid;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.text-container {
+  text-align: left;
+}
+
+/* Projects Section */
+
+.projects-container-one {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  gap: 2rem;
+  height: 10rem;
+}
+
+/* Contact */
+
+.contact-icon {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: 45vh;
+}
+
+.contact-details-container-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
 }

@@ -18,7 +18,6 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -34,15 +33,14 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img id="profile-photo" src="./business-photo.avif" alt="Jason Wang profile picture">
+    <section id="hero">
+      <div class="pic-container">
+        <img id="profile-photo" src="./files/business-photo.avif" alt="Jason Wang profile picture">
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
@@ -51,7 +49,7 @@
         <div id="btn-container">
           <button
             class="btn"
-            onclick="window.open('./jason-wang-cv.pdf')"
+            onclick="window.open('./files/jason-wang-cv.pdf')"
             >
             Download CV</button>
           <button
@@ -68,6 +66,68 @@
             class="fa-brands fa-github-alt"
             onclick="location.href='https://github.com/jason0800'"
             ></i>
+        </div>
+      </div>
+    </section>
+    <section class="about-section" id="about">
+      <h1 class="title">About Me</h1>
+      <div class="about-grand-container">
+        <div class="about-pic-container">
+          <img id="about-photo" src="./files/lewagon-photo.avif" alt="Jason Wang profile picture">
+        </div>
+        <div class="about-container-one">
+          <div class="about-container-two">
+            <div class="details-container">
+              <i class="fa-solid fa-star"></i>
+              <h3>Experience</h3>
+              <p>2+ years</p>
+              <p>Civil and Hydraulic Engineer</p>
+            </div>
+            <div class="details-container">
+              <i class="fa-solid fa-book"></i>
+              <h3>Education</h3>
+              <p>Le Wagon Web Dev Bootcamp</p>
+              <p>Bachelor of Engineering (Honours)</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>Hey, my name is Jason. My background is in civil engineering.
+              Most recently, I led the hydraulic coordination design for 435 Bourke Street,
+              a 1-billion AUD commercial development in Melbourne CBD.
+            </p>
+          </div>
+          <div class="text-container">
+            <p>
+              My true passion is in software and technology. My natural problem solving
+              skills means programming comes effortlessly to me.
+              I decided to attend the Le Wagon web development bootcamp in Richmond to pursue my goals,
+              am now I'm able to program fullstack applications!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <h1 class="title">Projects</h1>
+          <div class="projects-container-one">
+            <p>Project One</p>
+            <p>Project Two</p>
+            <p>Project Three</p>
+            <p>Project Four</p>
+            <p>Project Five</p>
+          </div>
+        </div>
+    </section>
+    <section id="contact">
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-details-container-one">
+        <div class="contact-details-container-two">
+          <i class="fa-regular fa-envelope contact-icon"></i>
+          <p><a href="mailto:examplemail@gmail.com">jasonwang332@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <i class="fa-brands fa-linkedin-in contact-icon"></i>
+          <p><a href="https://www.linkedin.com">jasonwangnx</a></p>
         </div>
       </div>
     </section>
