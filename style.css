@@ -1,79 +1,233 @@
-body {
-  font-family: 'Varela Round', sans-serif;
-  line-height: 1.5;
+/* General */
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
-  color:#627254;
-  font-size:20px;
-}
 
-h2 {
-  color:#76885B;
-  font-size:15px;
-}
-
-h3 {
-  color:#3a3a3a;
-  font-size:15px;
-}
-
-.link-charcoal {
-  color:#3a3a3a;
-  text-decoration: none;
-  font-size:15px;
-}
-
-a:hover {
-  color:#aaaaaa;
-  transition: 0.5s;
-  text-decoration: none;
-}
-
-.img-circle {
-  border-radius: 50%;
-  width: 150px;
-}
-
-.container {
-  width: 500px;   /* This sets the width */
-  margin: 0px auto; /* This automatically sets left/right margins */
-}
-
-.card {
-  margin: 15px auto;
-  background: white;
-  padding: 30px;
-  border-radius: 4px;
-  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+section {
+  padding-top: 10vh;
+  height: 90vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
   text-align: center;
 }
 
-.list-inline > li {
-  display: inline-block;
-  padding: 0px 20px;
+
+body {
+  font-family: 'Roboto Slab', sans-serif;
 }
 
-.list-inline {
-  list-style: none;
-  padding-left: 0px;
+html {
+  scroll-behavior: smooth;
 }
 
-@media (max-width: 960px) {
-  /* For a screen < 960px, this CSS will be read */
-  .container {
-    width: 700px;
-  }
+p {
+  color: rgb(85,85,85);
+  line-height: 25px;
 }
 
-@media (max-width: 720px) {
-  .container{
-    width: 500px;
-  }
+/* Links */
+
+a {
+  color: rgb(55, 55, 55);
+  text-decoration: none;
+  text-decoration-color: white;
 }
 
-@media (max-width: 540px) {
-  .container {
-    width: 300px;
-  }
+a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(192, 192, 192);
+}
+
+a, .btn {
+  transition: all 300ms ease;
+}
+
+/* Profile Pic */
+
+#hero {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 70vh;
+  align-items: center;
+}
+
+.pic-container {
+  display: flex;
+  height: 300px;
+  width: 300px;
+  margin: auto 0;
+}
+
+#profile-photo {
+  border-radius: 50%;
+}
+
+/* Text, buttons, and socials */
+
+.section__text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 0.7rem;
+}
+
+#btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  border-radius: 2rem;
+  padding: 1rem;
+  width: 8rem;
+  border: rgb(152, 152, 152) 0.1rem solid;
+  background-color: white;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: rgb(10, 10, 10);
+  color: white;
+  transition: 0.3s ease;
+}
+
+.btn-contact-info {
+  background-color: rgb(55, 55, 55);
+  color: white;
+}
+
+.fa-brands {
+  font-size: 1.5rem;
+}
+
+.fa-brands:hover {
+  cursor: pointer;
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.section__text__p1 {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.section__text__p2 {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+/* About Section */
+
+.about-grand-container {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  margin: 3rem 0;
+  position: relative;
+}
+
+.arrow {
+  font-size: 2rem;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+.about-pic-container {
+  display: flex;
+  height: 500px;
+  margin: auto 0;
+}
+
+#about-photo {
+  border-radius: 2rem;
+}
+
+.about-container-one {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-container-two {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.details-container {
+  flex: 1;
+  border-radius: 2rem;
+  padding: 2rem;
+  border: rgb(152, 152, 152) 0.1rem solid;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.text-container {
+  text-align: left;
+}
+
+/* Projects Section */
+
+.projects-container-one {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: 10rem;
+}
+
+.project-image {
+  margin-bottom: 20px;
+}
+
+.project-image img {
+  max-width: 100%;
+}
+
+/* Contact */
+
+.contact-icon {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+#contact {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: 400px;
+}
+
+.contact-details-container-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
 }

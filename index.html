@@ -1,34 +1,132 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Jason's Profile</title>
-    <meta name="description" content="My name is Jason and I'm studying programming at Le Wagon.">
+    <title>Jason Wang Portfolio</title>
+    <meta name="description" content="Hi, my name is Jason Wang and I am a full-stack developer.">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/0d24801cbd.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
   </head>
-
-  <div class="container">
-    <div class="card">
-      <h1>Hey, I'm Jason</h1>
-      <img class="img-circle" src="/profile/images/profile_picture.jpg" alt = "Jason Profile Picture">
-      <h2 class=>I'm a programming student at Le Wagon</h2>
-      <a class="link-charcoal" href="https://www.freecodecamp.org/learn" target = "_blank">Go to freecodecamp</a>
-    </div>
-    <div class="card">
-      <h3>Follow me</h3>
-      <ul class="list-inline">
-        <li class>
-          <a class="fa-brands fa-linkedin link-charcoal" href="https://www.linkedin.com/in/jasonwangnx/" id = "icon" target = "_blank"></a>
-        </li>
-        <li>
-          <a class="fa-brands fa-instagram link-charcoal" href="https://www.instagram.com/jason_w_1/" target = "_blank"></a>
-        </li>
-      </ul>
-    </div>
-  </div>
+  <body>
+    <section id="hero">
+      <div class="pic-container">
+        <img id="profile-photo" src="./files/suit_photo.jpg" alt="Jason Wang profile picture">
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Jason Wang</h1>
+        <p class="section__text__p2"><em>Engineer</em></p>
+        <div id="btn-container">
+          <button
+            class="btn"
+            onclick="window.open('./files/jason_wang_resume.pdf')"
+            >
+            Download CV</button>
+          <button
+            class="btn btn-contact-info" onclick="location.href='./#contact'"
+            >
+            Contact Info</button>
+        </div>
+        <div id="socials-container">
+          <i
+            class="fa-brands fa-linkedin-in"
+            onclick="location.href='https://linkedin.com/in/jasonwangnx/'"
+            ></i>
+          <i
+            class="fa-brands fa-github-alt"
+            onclick="location.href='https://github.com/jason0800'"
+            ></i>
+        </div>
+      </div>
+    </section>
+    <section class="about-section" id="about">
+      <h1 class="title">About Me</h1>
+      <div class="about-grand-container">
+        <div class="about-pic-container">
+          <img id="about-photo" src="./files/lewagon_photo.jpg" alt="Jason Wang profile picture">
+        </div>
+        <div class="about-container-one">
+          <div class="about-container-two">
+            <div class="details-container">
+              <i class="fa-solid fa-star"></i>
+              <h3>Experience</h3>
+              <p>2+ years</p>
+              <p>Civil and Hydraulic Engineer</p>
+            </div>
+            <div class="details-container">
+              <i class="fa-solid fa-book"></i>
+              <h3>Education</h3>
+              <p>Le Wagon Web Dev Bootcamp</p>
+              <p>Bachelor of Engineering (Honours)</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>Hey, my name is Jason. My background is in civil engineering.
+              Most recently, I led the hydraulic coordination design for 435 Bourke Street,
+              a 1-billion AUD commercial development in Melbourne CBD.
+            </p>
+          </div>
+          <div class="text-container">
+            <p>
+              I am also passionate about programming and technology. My natural problem solving
+              skills means coding comes effortlessly to me.
+              I'm able to create fullstack applications using Ruby on Rails.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <h1 class="title" style="margin-bottom:36px;">Projects</h1>
+      <div style="display: flex; justify-content:center; gap: 50px;">
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 28px;">
+          <a
+          style="font-size: 24px;"
+          href="https://www.bird-up.me"
+          >BirdUp!</a>
+          <p>Bird identification app using OpenAI API</p>
+          <div style="width: 500px; height: 450px; border-radius: 20px; overflow: hidden;">
+            <img
+              src="https://res.cloudinary.com/dwbnezzsj/image/upload/v1719126480/birdupdemo_qyzril.png"
+              alt="BirdUp! Demo Photo"
+              style="width: 100%; object-fit: cover;"
+              >
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 28px;">
+          <a
+            style="font-size: 24px;"
+            href="https://califind-jason0800-6de8a2b1f17c.herokuapp.com/"
+            >Califind</a>
+            <p>Easily locate outdoor calisthenics parks in your area</p>
+            <div style="width: 500px; height: 450px; border-radius: 20px; overflow: hidden;">
+              <img
+                src="https://res.cloudinary.com/dwbnezzsj/image/upload/v1719127233/califinddemo_v2panz.png"
+                alt="BirdUp! Demo Photo"
+                style="width: 110%;"
+                >
+            </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-details-container-one">
+        <div class="contact-details-container-two">
+          <i class="fa-regular fa-envelope contact-icon"></i>
+          <p><a href="mailto:examplemail@gmail.com">jasonwang332@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <i class="fa-brands fa-linkedin-in contact-icon"></i>
+          <p><a href="https://www.linkedin.com">jasonwangnx</a></p>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
 </html>
