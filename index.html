@@ -13,43 +13,18 @@
     <link rel="stylesheet" href="mediaqueries.css">
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Jason Wang</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Jason Wang</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
     <section id="hero">
       <div class="pic-container">
-        <img id="profile-photo" src="./files/business-photo.avif" alt="Jason Wang profile picture">
+        <img id="profile-photo" src="./files/suit_photo.jpg" alt="Jason Wang profile picture">
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Jason Wang</h1>
-        <p class="section__text__p2"><em>Fullstack Developer</em></p>
+        <p class="section__text__p2"><em>Engineer</em></p>
         <div id="btn-container">
           <button
             class="btn"
-            onclick="window.open('./files/jason-wang-cv.pdf')"
+            onclick="window.open('./files/jason_wang_resume.pdf')"
             >
             Download CV</button>
           <button
@@ -73,7 +48,7 @@
       <h1 class="title">About Me</h1>
       <div class="about-grand-container">
         <div class="about-pic-container">
-          <img id="about-photo" src="./files/lewagon-photo.avif" alt="Jason Wang profile picture">
+          <img id="about-photo" src="./files/lewagon_photo.jpg" alt="Jason Wang profile picture">
         </div>
         <div class="about-container-one">
           <div class="about-container-two">
@@ -98,25 +73,46 @@
           </div>
           <div class="text-container">
             <p>
-              My true passion is in software and technology. My natural problem solving
-              skills means programming comes effortlessly to me.
-              I decided to attend the Le Wagon web development bootcamp in Richmond to pursue my goals,
-              am now I'm able to program fullstack applications!
+              I am also passionate about programming and technology. My natural problem solving
+              skills means coding comes effortlessly to me.
+              I'm able to create fullstack applications using Ruby on Rails.
             </p>
           </div>
         </div>
       </div>
     </section>
     <section id="projects">
-      <h1 class="title">Projects</h1>
-          <div class="projects-container-one">
-            <p>Project One</p>
-            <p>Project Two</p>
-            <p>Project Three</p>
-            <p>Project Four</p>
-            <p>Project Five</p>
+      <h1 class="title" style="margin-bottom:36px;">Projects</h1>
+      <div style="display: flex; justify-content:center; gap: 50px;">
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 28px;">
+          <a
+          style="font-size: 24px;"
+          href="https://www.bird-up.me"
+          >BirdUp!</a>
+          <p>Bird identification app using OpenAI API</p>
+          <div style="width: 500px; height: 450px; border-radius: 20px; overflow: hidden;">
+            <img
+              src="https://res.cloudinary.com/dwbnezzsj/image/upload/v1719126480/birdupdemo_qyzril.png"
+              alt="BirdUp! Demo Photo"
+              style="width: 100%; object-fit: cover;"
+              >
           </div>
         </div>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 28px;">
+          <a
+            style="font-size: 24px;"
+            href="https://califind-jason0800-6de8a2b1f17c.herokuapp.com/"
+            >Califind</a>
+            <p>Easily locate outdoor calisthenics parks in your area.</p>
+            <div style="width: 500px; height: 450px; border-radius: 20px; overflow: hidden;">
+              <img
+                src="https://res.cloudinary.com/dwbnezzsj/image/upload/v1719127233/califinddemo_v2panz.png"
+                alt="BirdUp! Demo Photo"
+                style="width: 110%;"
+                >
+            </div>
+        </div>
+      </div>
     </section>
     <section id="contact">
       <h1 class="title">Contact Me</h1>
